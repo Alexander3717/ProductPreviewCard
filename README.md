@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [View solution on Frontend Mentor](https://your-solution-url.com)
-- Live Site URL: [View live site](https://your-live-site-url.com)
+- Solution URL: [View solution on Frontend Mentor](https://www.frontendmentor.io/solutions/product-preview-card-built-with-flexbox-and-picture-element-keW5fvMxPH)
+- Live Site URL: [View live site](https://alexander3717.github.io/ProductPreviewCard/)
 
 ## My process
 
