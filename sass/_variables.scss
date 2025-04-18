@@ -1,0 +1,66 @@
+// colors
+$color-black: #1c232b;
+$color-cream: #f2eae2;
+$color-green-500: #3d8168;
+$color-green-700: #1a4032;
+$color-grey: #6c7289;
+$color-white: #ffffff;
+
+// font sizes
+$font-size-text-preset-4: 0.75rem;
+$font-size-text-preset-5: 0.8125rem;
+$font-size-text-preset-2: 0.875rem;
+$font-size-text-preset-3: 0.875rem;
+$font-size-text-preset-1: 2rem;
+
+// spacings
+$spacing-50: 0.25rem;
+$spacing-100: 0.5rem;
+$spacing-200: 1rem;
+$spacing-300: 1.5rem;
+$spacing-400: 2rem;
+$spacing-500: 2.5rem;
+
+// text presets
+@mixin text-preset-1 {
+    color: $color-black;
+    font-family: "Fraunces";
+    font-size: $font-size-text-preset-1;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;      
+}
+@mixin text-preset-2 {
+    color: $color-black;
+    font-family: "Montserrat";
+    font-size: $font-size-text-preset-2;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+}
+@mixin text-preset-3 {
+    color: $color-grey;
+    font-family: "Montserrat";
+    font-size: $font-size-text-preset-3;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+}
+@mixin text-preset-4 {
+    color: $color-grey;
+    font-family: "Montserrat";
+    font-size: $font-size-text-preset-4;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 5px;
+}
+@mixin text-preset-5 {
+    color: $color-grey;
+    font-family: "Montserrat";
+    font-size: $font-size-text-preset-5;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    text-decoration-line: strikethrough;
+}

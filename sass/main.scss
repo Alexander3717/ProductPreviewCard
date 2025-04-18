@@ -1,0 +1,106 @@
+@use "setup" as *; // imports variables, CSS reset and helper functions
+
+body {
+    background-color: $color-cream;
+}
+main {
+    @include flex(row, center, center);
+    padding: rem(80px) rem(12px) rem(172px) rem(13px);
+}
+
+.productcard {
+    @include flex(column, center, stretch);
+    max-width: rem(350px);
+
+    &__img {
+        height: rem(342px);
+        object-fit: cover;
+        object-position: top;
+        border-radius: rem(8px) rem(8px) 0 0;
+    }
+
+    &__header, &__content {
+        @include flex($dir: column, $gap: $spacing-300);
+    }
+
+    &__content {
+        padding: $spacing-400;
+
+        background: $color-white;
+        border-radius: 0 0 rem(8px) rem(8px);
+    }
+
+    &__header {
+        
+        &-category {
+            @include text-preset-4;
+            text-transform: uppercase;
+        }
+    
+        h1 {
+            @include text-preset-1;
+        }
+    
+        &-description {
+            @include text-preset-3;
+        }
+    }
+
+    &__price {
+        div {
+            @include flex($align: center, $gap: $spacing-200);
+        }
+
+        h2 {
+            @include text-preset-1;
+            color: $color-green-500;
+        }
+
+        del {
+            @include text-preset-5;
+        }
+    }
+
+    &__button {
+        @include flex(row, center, center, $spacing-100);
+        @include text-preset-2;
+        color: $color-white;
+        line-height: 100%;
+        
+        padding: $spacing-200 $spacing-400;
+
+        background-color: $color-green-500;
+        border-radius: $spacing-100;
+        border: none;
+
+        &:hover {
+            background-color: $color-green-700;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (min-width: rem(768px)) {
+    main {
+        padding: rem(286.5px) 0;
+    }
+    .productcard {
+        max-width: rem(600px);
+        flex-direction: row;
+
+        picture {
+            flex-shrink: 0;
+        }
+
+        &__img {
+            width: rem(300px);
+            height: 100%;
+            border-radius: rem(8px) 0 0 rem(8px);
+        }
+    
+        &__content {
+            gap: $spacing-400;
+            border-radius: 0 rem(8px) rem(8px) 0;
+        }
+    }
+}
