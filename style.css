@@ -112,7 +112,7 @@ main {
   line-height: 100%;
   color: #3d8168;
 }
-.productcard__price del {
+.productcard__price s {
   color: #6c7289;
   font-family: "Montserrat";
   font-size: 0.8125rem;
