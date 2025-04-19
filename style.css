@@ -39,8 +39,9 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   gap: 0;
+  min-height: 100vh;
   padding: 5rem 0.75rem 10.75rem 0.8125rem;
 }
 
@@ -147,7 +148,8 @@ main {
 
 @media (min-width: 48rem) {
   main {
-    padding: 17.90625rem 0;
+    padding: 1.5rem;
+    align-items: center;
   }
   .productcard {
     max-width: 37.5rem;

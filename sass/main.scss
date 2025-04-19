@@ -4,7 +4,8 @@ body {
     background-color: $color-cream;
 }
 main {
-    @include flex(row, center, center);
+    @include flex(row, center);
+    min-height: 100vh;
     padding: rem(80px) rem(12px) rem(172px) rem(13px);
 }
 
@@ -82,7 +83,8 @@ main {
 
 @media (min-width: rem(768px)) {
     main {
-        padding: rem(286.5px) 0;
+        padding: $spacing-300;
+        align-items: center;
     }
     .productcard {
         max-width: rem(600px);
